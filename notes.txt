@@ -1,0 +1,15 @@
+@apply lets you take existing Tailwind utility classes and bundle them into your own custom CSS class name.
+.btn-primary {
+  @apply bg-primary text-primary-foreground px-4 py-2 rounded-md;
+}
+
+Instead of writing this every time in your JSX:
+
+jsx
+<button className="bg-primary text-primary-foreground px-4 py-2 rounded-md">
+
+You can just write:
+
+jsx
+<button className="btn-primary">
+@apply = "copy-paste these Tailwind utility classes into this CSS rule," so you get a reusable class name instead of repeating a long string of utilities everywhere.
