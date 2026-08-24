@@ -121,9 +121,9 @@ export const ContactSection = () => {
  >
                         <FaLinkedin />
                     </a>
-                    <a target='_blank' rel="noopener noreferrer" className='hover:text-primary duration-300' href='https://www.instagram.com/manvi.hj?igsi=djRsbWlxNmhhb3Rj'>
+                    {/* <a target='_blank' rel="noopener noreferrer" className='hover:text-primary duration-300' href='https://www.instagram.com/manvi.hj?igsi=djRsbWlxNmhhb3Rj'>
                         <SiInstagram />
-                    </a>
+                    </a> */}
                     <a target='_blank' rel="noopener noreferrer" className='hover:text-primary duration-300' href='https://wa.me/918970304899'>
                         <SiWhatsapp  />
                     </a>
