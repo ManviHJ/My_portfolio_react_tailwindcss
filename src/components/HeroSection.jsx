@@ -1,8 +1,8 @@
 import { ArrowDown } from 'lucide-react';
 import React, { useState, useEffect } from 'react'
 const roles = [
-    "Design Engineer, in Progress",
-    // "Fullstack Developer",
+    "Design Engineer",
+    "Fullstack/MERN Stack Developer",
     // "Frontend Developer",
     // "UI/UX Designer",
     // "Software Engineer"
