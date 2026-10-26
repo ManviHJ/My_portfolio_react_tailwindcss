@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const skills = [
     //languages
     {name: "C" , level: 70, category: "programming language"},
-    {name: "Python" ,level: 70, category: "programming language"},
+    // {name: "Python" ,level: 70, category: "programming language"},
     {name: "JavaScript" , level: 70, category: "programming language"},
 
     //frontend
@@ -20,7 +20,7 @@ const skills = [
     //tools
     {name: "Figma" , level: 77, category: "tools"},
     {name: "VS Code" , level: 60,category: "tools"},
-    {name: "Git/Github" , level:55, category: "tools"},
+    {name: "Basic Git/Github" , level:55, category: "tools"},
     {name: "ChatGPT" , level: 50, category: "tools"},
     {name: "Claude" , level: 60, category: "tools"},
     {name: "Cursor IDE" , level: 50, category: "tools"},
@@ -34,8 +34,9 @@ const skills = [
     {name: "Wireframing" , level: 70 , category: "design"},
     {name: "User Flow" , level: 70 , category: "design"},
     {name: "Prototyping" , level: 70 , category: "design"},
-    {name: "Constraints" , level: 70 , category: "design"},
+    {name: "Variables" , level: 70 , category: "design"},
     {name: "Components" , level: 70 , category: "design"},
+    {name: "Basic Design Systems" , level: 70 , category: "design"},
 
     //soft skills
     {name: "Verbal & Written Communication Skills " , level: 75 , category: "soft skills"},
