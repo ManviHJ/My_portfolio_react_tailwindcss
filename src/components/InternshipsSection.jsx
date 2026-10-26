@@ -1,3 +1,4 @@
+
 import { ExternalLink } from "lucide-react";
 
 const internships = [
@@ -5,17 +6,21 @@ const internships = [
         role: "Design Engineer Internship",
         company: "Coco Grid Private Limited",
         companyUrl: "https://www.cocogrid.com/",
-        description:"Supporting design engineering projects at CocoGrid, including frontend development, design systems, and AI-assisted workflows.",
+        description:
+            "Currently supporting design engineering projects at Coco Grid, focusing on design systems, frontend development, and AI-assisted workflows.",
         logo: "coco grid logo.jpg",
-        certificateUrl: "https://drive.google.com/file/d/1l4_wBdOMxifbpcY8Sr20nPOK1JEvbkoW/view?usp=drive_link",
+        offerLetterUrl:
+            "https://drive.google.com/file/d/1ObCYteQDfd-K37aHDIV81CHxow0lMme3/view?usp=sharing",
     },
     {
         role: "Fullstack/MERN Stack Development Internship",
         company: "Kakunje Software Private Limited",
         companyUrl: "https://kakunjesoftware.com/",
-        description:"Worked on a full-scale Manufacturing ERP and Inventory Management System for Skanda Plastics using the MERN stack. Contributed to building inventory tracking, production monitoring, and sales/purchase modules, while integrating REST APIs and implementing JWT-based authentication for secure access, gaining hands-on, real-world experience in full-stack development and API testing.",
+        description:
+            "Worked on a Manufacturing ERP and Inventory Management System for Skanda Plastics using the MERN stack. Contributed to inventory tracking, production monitoring, and sales and purchase modules. Integrated REST APIs and implemented JWT-based authentication, gaining hands-on experience in full-stack development and API testing.",
         logo: "kaku logo.jpg",
-        certificateUrl: "https://drive.google.com/file/d/1K1JzxoJu3gAHoU3aTRNc239SeAcltpD7/view?usp=sharing",
+        certificateUrl:
+            "https://drive.google.com/file/d/1K1JzxoJu3gAHoU3aTRNc239SeAcltpD7/view?usp=sharing",
     },
 ];
 
@@ -33,44 +38,70 @@ export const InternshipsSection = () => {
                             key={i}
                             className="gradient-border card-hover p-8 flex flex-col sm:flex-row gap-8 items-start"
                         >
-                            {/* logo */}
+                            {/* Company logo */}
                             <div className="w-full sm:w-56 h-32 rounded-lg overflow-hidden bg-white flex items-center justify-center shrink-0 p-4">
                                 <img
                                     src={intern.logo}
-                                    alt={intern.company}
+                                    alt={`${intern.company} logo`}
                                     className="w-full h-full object-contain"
                                 />
                             </div>
 
-                            {/* content */}
+                            {/* Internship details */}
                             <div className="flex-1">
-                                <h3 className="text-2xl font-bold mb-3">{intern.role}</h3>
+                                <h3 className="text-2xl font-bold mb-3">
+                                    {intern.role}
+                                </h3>
+
                                 <p className="text-muted-foreground mb-4">
                                     {intern.description}
                                 </p>
 
-                                
-                                   <a href={intern.companyUrl}
+                                {/* Company website */}
+                                <a
+                                    href={intern.companyUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-primary font-bold inline-block mb-5 hover:underline"
                                 >
                                     {intern.company}
+                                    <ExternalLink
+                                        size={14}
+                                        className="inline ml-1"
+                                    />
                                 </a>
 
-                                {intern.certificateUrl && (
-                                    <div>
-                                        
-                                        <a    href={intern.certificateUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="cosmic-button inline-flex items-center gap-2"
-                                        >
-                                            View Completion Certificate
-                                            <ExternalLink size={16} />
-                                        </a>
-                                    </div>
-                                )}
+                                {/* Offer letter for ongoing internship */}
+                                {"offerLetterUrl" in intern &&
+                                    intern.offerLetterUrl && (
+                                        <div>
+                                            <a
+                                                href={intern.offerLetterUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="cosmic-button inline-flex items-center gap-2"
+                                            >
+                                                View Offer Letter
+                                                <ExternalLink size={16} />
+                                            </a>
+                                        </div>
+                                    )}
+
+                                {/* Completion certificate for completed internship */}
+                                {"certificateUrl" in intern &&
+                                    intern.certificateUrl && (
+                                        <div>
+                                            <a
+                                                href={intern.certificateUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="cosmic-button inline-flex items-center gap-2"
+                                            >
+                                                View Completion Certificate
+                                                <ExternalLink size={16} />
+                                            </a>
+                                        </div>
+                                    )}
                             </div>
                         </div>
                     ))}
