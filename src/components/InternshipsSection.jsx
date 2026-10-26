@@ -2,20 +2,20 @@ import { ExternalLink } from "lucide-react";
 
 const internships = [
     {
-        role: "Fullstack/MERN Stack Development Internship",
-        company: "Kakunje Software Private Limited",
-        companyUrl: "https://kakunjesoftware.com/",
-        description:"Worked on a full-scale Manufacturing ERP and Inventory Management System for Skanda Plastics using the MERN stack. Contributed to building inventory tracking, production monitoring, and sales/purchase modules, while integrating REST APIs and implementing JWT-based authentication for secure access, gaining hands-on, real-world experience in full-stack development and API testing.",
-        logo: "kaku logo.jpg",
-        certificateUrl: "https://drive.google.com/file/d/1K1JzxoJu3gAHoU3aTRNc239SeAcltpD7/view?usp=sharing",
-    },
-    {
         role: "Design Engineer Internship",
         company: "Coco Grid Private Limited",
         companyUrl: "https://www.cocogrid.com/",
         description:"Supporting design engineering projects at CocoGrid, including frontend development, design systems, and AI-assisted workflows.",
         logo: "coco grid logo.jpg",
         certificateUrl: "https://drive.google.com/file/d/1l4_wBdOMxifbpcY8Sr20nPOK1JEvbkoW/view?usp=drive_link",
+    },
+    {
+        role: "Fullstack/MERN Stack Development Internship",
+        company: "Kakunje Software Private Limited",
+        companyUrl: "https://kakunjesoftware.com/",
+        description:"Worked on a full-scale Manufacturing ERP and Inventory Management System for Skanda Plastics using the MERN stack. Contributed to building inventory tracking, production monitoring, and sales/purchase modules, while integrating REST APIs and implementing JWT-based authentication for secure access, gaining hands-on, real-world experience in full-stack development and API testing.",
+        logo: "kaku logo.jpg",
+        certificateUrl: "https://drive.google.com/file/d/1K1JzxoJu3gAHoU3aTRNc239SeAcltpD7/view?usp=sharing",
     },
 ];
 
